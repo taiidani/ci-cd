@@ -3,7 +3,7 @@ version: '2'
 services:
   web:
     build:
-      image: taiidani/ci-cd:latest
+      image: taiidani/ci-cd-codeship:latest
       dockerfile: Dockerfile
     environment:
       IN_CI: kay

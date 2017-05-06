@@ -3,7 +3,7 @@
   command: php /var/www/html/tests/run.php
 - type: push
   name: deliver
-  image_name: taiidani/ci-cd
+  image_name: taiidani/ci-cd-codeship
   image_tag: "{{.Branch}}"
   encrypted_dockercfg_path: dockercfg.encrypted
   service: web
