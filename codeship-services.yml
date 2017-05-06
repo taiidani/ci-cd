@@ -2,8 +2,9 @@ version: '2'
 
 services:
   web:
-    build: .
-    image: taiidani/ci-cd:latest
+    build:
+      image: taiidani/ci-cd:latest
+      dockerfile: Dockerfile
     environment:
       IN_CI: kay
     cached: true
