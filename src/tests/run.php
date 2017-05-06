@@ -5,5 +5,5 @@ if(getenv("FAIL_TESTS")) {
     exit(1);
 } else {
     print "Passing.";
-    exit(0)
+    exit(0);
 }

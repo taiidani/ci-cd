@@ -1,0 +1,9 @@
+- name: test
+  service: web
+  command: php /var/www/html/tests/run.php
+- type: push
+  name: deliver
+  image_name: taiidani/ci-cd
+  encrypted_dockercfg_path: dockercfg.encrypted
+  service: app
+  registry: https://index.docker.io/v1/

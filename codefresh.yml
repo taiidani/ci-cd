@@ -3,7 +3,7 @@ steps:
   build_image:
     type: build
     description: Building the image...
-    image-name: taiidani/ci-cd
+    image_name: taiidani/ci-cd
     tag: ${{CF_BRANCH}}
 
   perform_tests:
