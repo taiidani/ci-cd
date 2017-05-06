@@ -17,4 +17,4 @@ steps:
     title: deliver
     description: Pushing to Registry...
     candidate: ${{build_image}}
-    tag: ${{CF_BRANCH}}
+    tag: ${{CF_BRANCH_TAG_NORMALIZED}}
