@@ -6,4 +6,6 @@ services:
       context: .
     image: taiidani/ci-cd:latest
     ports:
-      - 80
+      - 32768:80
+    environment:
+      IN_YML: "yes"
