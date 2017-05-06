@@ -1,0 +1,15 @@
+version: '1.0'
+steps:
+  build_image:
+    type: build
+    description: Building the image...
+    image-name: taiidani/ci-cd
+    tag: ${{CF_BRANCH}}
+
+  perform_tests:
+    image: ${{build_image}}
+    working_directory: /var/www/html/tests
+    description: Performing unit tests...
+    commands:
+      - php run.php
+
