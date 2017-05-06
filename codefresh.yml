@@ -4,7 +4,6 @@ steps:
     type: build
     description: Building the image...
     image_name: taiidani/ci-cd-codefresh
-    tag: ${{CF_BRANCH}}
 
   perform_tests:
     image: ${{build_image}}
@@ -18,3 +17,4 @@ steps:
     title: deliver
     description: Pushing to Registry...
     candidate: ${{build_image}}
+    tag: ${{CF_BRANCH}}
