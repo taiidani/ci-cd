@@ -5,5 +5,5 @@
   name: deliver
   image_name: taiidani/ci-cd
   encrypted_dockercfg_path: dockercfg.encrypted
-  service: app
+  service: web
   registry: https://index.docker.io/v1/
