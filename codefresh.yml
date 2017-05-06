@@ -3,7 +3,7 @@ steps:
   build_image:
     type: build
     description: Building the image...
-    image_name: taiidani/ci-cd
+    image_name: taiidani/ci-cd-codefresh
     tag: ${{CF_BRANCH}}
 
   perform_tests:
@@ -13,3 +13,8 @@ steps:
     commands:
       - php run.php
 
+  push:
+    type: push
+    title: deliver
+    description: Pushing to Registry...
+    candidate: ${{build_image}}
