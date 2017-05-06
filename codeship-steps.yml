@@ -4,6 +4,7 @@
 - type: push
   name: deliver
   image_name: taiidani/ci-cd
+  image_tag: "{{.Branch}}"
   encrypted_dockercfg_path: dockercfg.encrypted
   service: web
   registry: https://index.docker.io/v1/

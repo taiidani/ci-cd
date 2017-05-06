@@ -3,6 +3,7 @@ version: '2'
 services:
   web:
     build: .
+    image: taiidani/ci-cd:latest
     environment:
       IN_CI: kay
     cached: true
